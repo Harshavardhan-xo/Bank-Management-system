@@ -207,7 +207,7 @@ elif menu == "login":
                     
         elif login_ == "Withdarwal":
             
-            Withdarwal_ = st.number_input("Depostie",step=100,placeholder="Enter The Deposite Amount")
+            Withdarwal_ = st.number_input("Withdarwal",step=100,placeholder="Enter The Withdarwal Amount")
             password = st.text_input("Password",type="password",placeholder="Enter The Password")
             c_b1 = bal(password) 
             bal2 = c_b1 - Withdarwal_
@@ -239,4 +239,5 @@ elif menu == "login":
                         st.success("Your account was closed successfully")
                         st.session_state.confirm_close = False
                     else:
+
                         st.warning("Password mismatch")
